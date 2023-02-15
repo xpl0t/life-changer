@@ -1,0 +1,17 @@
+PATCH http://localhost:3000/api/game-board HTTP/1.1
+content-type: application/json
+
+{
+    "data": "     \n XXX \n X X \n XXX \n     ",
+    "type": "simple"
+}
+
+###
+
+PATCH http://localhost:3000/api/game-board HTTP/1.1
+content-type: application/json
+
+{
+    "data": "     \n     \n XX  \n X   \n     \n     ",
+    "type": "simple"
+}

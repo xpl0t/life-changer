@@ -1,0 +1,17 @@
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+@mixin theme($theme) {
+  $primary: map.get($theme, primary);
+  $error: map.get($theme, warn);
+
+  mat-card.info {
+    background-color: #4a00ff1a;
+    background-color: rgba(mat.get-color-from-palette($primary, lighter), 0.5);
+  }
+
+  mat-card.error {
+    background-color: rgba(#ffc8cb, 0.75);
+    color: black;
+  }
+}

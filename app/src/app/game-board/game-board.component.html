@@ -1,0 +1,10 @@
+<div class="d-flex flex-column h-100">
+    <div class="flex-grow-1 position-relative" style="border: 1px dashed black; overflow: scroll;">
+        <div *ngFor="let co of currentVisu" style="position: absolute; width: 20px; height: 20px; background-color: green; border: 1px dashed black" [ngStyle]="{ top: co[1], left: co[0] }"></div>
+    </div>
+
+    <div>
+        <button (click)="startStop()">Start/Stop</button>
+        <button (click)="reset()">Reset</button>
+    </div>
+</div>

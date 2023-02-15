@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+@use "./themes/deeppurple-amber";
+@use "cursor";
+@use "mat-icon";
+@use "util";
+
+@include mat.core();
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-form-field-wrapper {
+  padding: 0;
+}
